@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" async></script>
+  <title>못난이를 기억해줘</title>
+</head>
+<body>
+  <h1 class="page-title">못난이를 기억해줘</h1>
+  <div class="overlay-text visible">
+    시작하기
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    게임 끝
+    <span class="overlay-text-small">다시 시작</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    성공
+    <span class="overlay-text-small">다시 시작</span>
+  </div>
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglypear.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglypear.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/pear.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/pear.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglyapple.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglyapple.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/apple.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/apple.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglycarrot.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglycarrot.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/carrot.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/carrot.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglylemon.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/uglylemon.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/lemon.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="bean bean-top"
+        src="Assets/Images/beantop.png">
+        <img class="bean bean-bottom"
+        src="Assets/Images/beanbottom.png">
+      </div>
+      <div class="card-front card-face inner-outline">
+        <img class="card-value" src="Assets/Images/lemon.png">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
